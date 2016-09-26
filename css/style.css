@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	padding: 50px;
+}
+img{
+	float: left;
+	height: 200px;
+	width: 30%;
+	margin-left: 20px;
+	margin-top: 50px;
+}
+.wrap{
+	width: 400px;
+	margin: 0 auto;
+}
+.searchField{
+	height: 30px;
+	width: 200px;
+	font-size: 18px;
+	padding-left: 20px;
+}
+#search{
+	height: 34px;
+	width: 100px;
+}
