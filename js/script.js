@@ -1,7 +1,7 @@
 /*SEARCH*/
-var request = new XMLHttpRequest();
 function getjson(word){
-	request.open('GET', 'https://api.riffsy.com/v1/search?key=LIVDSRZULELA&tag='+word+'&limit=10');
+	var request = new XMLHttpRequest();
+	request.open('GET', 'https://api.riffsy.com/v1/search?key=LIVDSRZULELA&tag='+word+'&limit=10', true);
 	request.onreadystatechange = function(){
 		if (request.status === 200 && request.readyState === 4){
 			var jText = JSON.parse(request.responseText);
@@ -56,8 +56,8 @@ function worker(){
 
 worker.prototype = new human();
 student.prototype = new human();
-var newWorker = new worker;
-var newStudent = new student;
+var newWorker = new worker();
+var newStudent = new student();
 newWorker.work(8);
 newStudent.watchSerials(8);
 console.log(newWorker);
